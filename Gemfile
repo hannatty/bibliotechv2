@@ -33,6 +33,12 @@ gem 'image_processing', '~> 1.12', '>= 1.12.2'
 # i18n
 gem 'i18n', '~> 1.14', '>= 1.14.1'
 
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+
+# Gem Devise
+gem 'devise', '~> 4.9', '>= 4.9.2'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

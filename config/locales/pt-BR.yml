@@ -10,6 +10,9 @@ pt-BR:
     success_create: Livro adicionado com sucesso.
     success_delete: Livro removido com sucesso.
     success_update: Livro atualizado com sucesso.
+  home:
+    show_collection: "Vizualizar Coleção"
+    back_home: "Voltar para página inicial"
   activerecord:
     models:
       book:
