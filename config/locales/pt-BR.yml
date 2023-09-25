@@ -29,3 +29,11 @@ pt-BR:
           avatar: Imagem
           created_at: Adicionado em
           updated_at: Atualizado em
+      admin:
+        one: Admin
+        other: Admins
+      attributes:
+        admin:
+          email: Email
+          created_at: Adicionado em
+          updated_at: Atualizado em
