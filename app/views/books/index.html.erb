@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t('activerecord.models.book', count: @books.count) %></h1>
+
+<div id="books">
+  <% @books.each do |book| %>
+    <%= render book %>
+    <p>
+      <%= link_to t('global.show'), book %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to t('global.new'), new_book_path %>

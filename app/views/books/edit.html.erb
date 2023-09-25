@@ -1,0 +1,10 @@
+<h1><%= t('global.edit') + ' ' + t('activerecord.models.book.one') %></h1>
+
+
+<%= render "form", book: @book %>
+
+<br>
+
+<div>
+  <%= link_to t('global.back'), books_path %>
+</div>

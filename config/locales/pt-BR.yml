@@ -1,0 +1,28 @@
+pt-BR:
+  global:
+    edit: Editar
+    show: Ver detalhes
+    delete: Remover
+    new: Adicionar novo livro
+    new_book: Novo Livro
+    back: Voltar
+    submit_button: Enviar
+    success_create: Livro adicionado com sucesso.
+    success_delete: Livro removido com sucesso.
+    success_update: Livro atualizado com sucesso.
+  activerecord:
+    models:
+      book:
+        one: Livro
+        other: Livros
+      attributes:
+        book:
+          title: Título
+          description: Sinopse
+          author: Autor
+          pages: Páginas
+          genre: Gênero
+          publisher: Editora
+          avatar: Imagem
+          created_at: Adicionado em
+          updated_at: Atualizado em

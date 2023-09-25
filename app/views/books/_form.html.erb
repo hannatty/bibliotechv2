@@ -1,0 +1,52 @@
+<%= form_with(model: book) do |form| %>
+  <% if book.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+        <% book.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.title'), style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.description'), style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.author'), style: "display: block" %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.pages'), style: "display: block" %>
+    <%= form.number_field :pages %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.genre'), style: "display: block" %>
+    <%= form.text_field :genre %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.publisher'), style: "display: block" %>
+    <%= form.text_field :publisher %>
+  </div>
+
+  <div>
+    <%= form.label t('activerecord.models.attributes.book.avatar'), style: "display: block" %>
+    <%= form.file_field :avatar %>
+  </div>
+
+  <div>
+    <%= form.submit t('global.submit_button') %>
+  </div>
+<% end %>

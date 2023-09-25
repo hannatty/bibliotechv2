@@ -1,0 +1,46 @@
+<div id="<%= dom_id book %>">
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.title') %></strong>
+    <%= book.title %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.description') %></strong>
+    <%= book.description %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.author') %></strong>
+    <%= book.author %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.pages') %></strong>
+    <%= book.pages %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.genre') %></strong>
+    <%= book.genre %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.publisher') %></strong>
+    <%= book.publisher %>
+  </p>
+
+  <p>
+    <strong><%= t('activerecord.models.attributes.book.avatar') %></strong>
+    <% if action_name == 'show' %>
+      <% if book.avatar.attached? %>
+        <%= image_tag book.avatar %>
+      <% else %>
+        <%= image_tag 'default-image-book.png' %> 
+      <% end %>
+    <% else %>
+      <%= book.avatar.filename %>
+    <% end %>
+  </p>
+
+</div>
+
